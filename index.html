@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MyFirstPage-Tea recipe</title>
+        <meta name="description" content="Tea recipe">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="container">
+     <header>
+         <h1>How to make tea</h1>
+         <img src="image/pexels-mareefe-1417945.jpg" alt="cup of tea">
+         <p>Tea is flavourful way of getting enough fluid into your body each day.
+             On top of that, studies have shown teas can help protect your teeth and heart.
+         </p>
+         <h2></h2>
+     </header>  
+     <section id="ingredients" onmousemove="ingredientsHover()" onmouseout="ingredientsNormal()">
+         <h2>Ingredients <i class="fa fa-coffee" aria-hidden="true"></i></h2>
+         <ul>
+             <li>Tea bag</li>
+             <li>Water</li>
+             <li>Milk(optional)</li>
+             <li>Sugar or honey</li>
+         </ul>
+     </section> 
+     <section id="preparation" onmousemove="preparationHover()" onmouseout="preparationNormal()">
+         <h2>Preparation <i class="fa fa-check" aria-hidden="true"></i></h2>
+         <ol>
+             <li>Boil a tap water</li>
+             <li>Pop a tea bag in a <em>big</em> mug</li>
+             <li>Pour the hot water over</li>
+             <li>Leave the tea bag to release flavour for 3-4 min and remove</li>
+             <li>You can throw some milk now if you like</li>
+             <li>Sweeten with sugar or honey</li>
+             <li><strong>Enjoy!</strong></li>
+         </ol>
+     </section>
+     <footer>
+         <p><strong>Copyright.Me 2021</strong></p>
+     </footer>
+    </div>
+    <script>
+        function ingredientsHover(){
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = "200%"
+        }
+        function ingredientsNormal(){
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = "100%"
+        }
+        function preparationHover(){
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = "200%"
+        }
+        function preparationNormal(){
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = "100%"
+        }
+
+    </script>
+    </body>
+</html>
